@@ -1,0 +1,93 @@
+@use '../../../variaveis' as *;
+section{
+        background-color: $Fundo-Primaria;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    div.FormularioContainer{
+
+        width: 600px;
+        height: 700px;
+        background-color: #FFF;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        p{
+            font-weight: 600;
+            font-size: 12px;
+            span{
+                color: $Azul-Secundaria;
+            }
+        }
+
+        input{
+            
+            border: none;
+            border-bottom: 1px solid $Azul-Secundaria !important;
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        
+
+        div.Identificacao{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            
+            
+            p{
+                margin-left: 10px;
+                margin-right: 90px;
+            }
+            
+            div{
+                display: flex;
+                gap: 150px;
+                p{
+                    
+                }
+            }
+            
+        }
+        div.Assunto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            
+            input{
+                width: 400px;
+            }
+            
+            div.div3{
+                input{
+                    height: 100px;
+                }  
+            } 
+        }
+    }
+
+    button.btnAzul{
+        padding: 6px 25px;
+        border-radius: 45px;
+        background-color: $Azul-Secundaria;
+        color: #fff;
+        border: 2px solid $Azul-Secundaria;
+            
+        &:hover{
+            background-color: #FFF;
+            color: #000;
+        } 
+    }
+}

@@ -1,0 +1,27 @@
+<div class="NavBar">
+  <p>
+    <span class="prefix">{{ prefix }}</span>
+      
+      <span class="nome">{{ name }}</span>
+     <span class="suffix">{{ suffix }}</span>
+  </p>
+
+  <ul>
+    <li *ngFor="let item of navegation">
+      <a [routerLink]="item.link">
+        {{ item.name }}
+      </a>
+    </li>
+  </ul>
+</div>
+  
+
+   
+
+    
+      
+ 
+
+
+
+   

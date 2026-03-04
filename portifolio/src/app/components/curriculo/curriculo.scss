@@ -1,0 +1,93 @@
+@use '../../../variaveis' as *;
+section{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #E6DACE;
+    padding: 50px;
+
+    div.containerCV{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 400px;
+        
+
+        button.btnAzul{
+            background-color: $Azul-Secundaria;
+            color: #fff;
+            border: 2px solid $Azul-Secundaria;
+            padding: 6px 25px;
+            border-radius: 45px;
+         &:hover{
+            background-color: #FFF;
+            color: #000;
+        } 
+    }
+    }
+
+    div{
+
+        div.pTitulo{
+            display: ruby;
+            margin-left: 40px;
+            p.pData{
+                Color: $Azul-Secundaria;
+                font-weight: 600;   
+            }
+
+            p.pCargo{
+                font-size: 12px;
+            }
+            p.pEmpresa{
+                font-size: 12px;
+            }
+        }
+
+        div.pDescricao{
+            margin-right: 80px;
+            margin-left: 50px;
+
+            text-align: justify;
+            hyphens: auto;
+            text-indent: 20px;
+            line-height: 1.3;
+            font-size: 0.8rem;
+            color: #000000;
+            
+            letter-spacing: 0.2px;
+        }
+
+        
+    }
+
+    div.habilidades{
+        
+        div.pTitulo{
+            display: flex;
+            flex-direction: column;
+           
+            align-items: center;
+            
+            div.Tecnologias{
+            display: flex;
+            gap: 15px;
+            
+            img{
+                width: 30px;
+            }
+        }
+        }
+        
+        
+        
+    }
+    
+    p.textosXP{
+        font-weight: 700;
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,40 @@
+.divPai{
+    img{
+        border-radius: 100%;
+    }
+    
+    h1{
+        font-size: 25px;
+        font-weight: 800;
+        
+
+        border-bottom: 2px solid #0050FF;
+
+        padding-bottom: 10px ;
+        margin-bottom: 20px;
+        
+        span{
+            display: block;
+        }
+    }
+
+    p{
+        font-size: 18px;
+        font-weight: 300;
+        font-family: 'Roboto';
+        letter-spacing: 4px;
+
+        
+    }
+
+    .imgs{
+        transform: translateY(40px);
+        img{
+
+            width: 30px;
+            margin-right: 10px;
+
+            
+        }   
+    }
+}
