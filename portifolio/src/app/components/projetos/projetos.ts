@@ -1,10 +1,10 @@
-
 import { NavBar } from '../nav-bar/nav-bar';
 import { Footer } from '../footer/footer';
 import { CurriculoDirective } from '../../directives/curriculo.directive';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProjetosService } from '../../services/projetos';
+import { ProjetosService, Projeto } from '../../services/projetos';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-projetos',
@@ -13,21 +13,13 @@ import { ProjetosService } from '../../services/projetos';
   templateUrl: './projetos.html',
   styleUrls: ['./projetos.scss']
 })
-export class Projetos implements OnInit {
+export class Projetos {
 
-  projetos: any[] = [];
+  projetos$: Observable<Projeto[]>;
 
-  constructor(private projetosService: ProjetosService) {}
-
-  ngOnInit(): void {
-    this.projetosService.listar().subscribe({
-      next: (res) => {
-        console.log("DADOS RECEBIDOS:", res);
-        this.projetos = res;
-      },
-      error: (err) => {
-        console.error("ERRO:", err);
-      }
-    });
+  constructor(private projetosService: ProjetosService) {
+    debugger
+    this.projetos$ = this.projetosService.listar();
   }
+
 }

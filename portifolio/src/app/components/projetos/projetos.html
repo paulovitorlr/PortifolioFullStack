@@ -1,10 +1,9 @@
 <app-nav-bar></app-nav-bar>
 
 <section>
-    
-    <h1>
-        
-    </h1>
+
+    <h1></h1>
+
     <p>
         Sou um parágrafo. Aqui você pode adicionar e editar seu
         próprio texto. É fácil, basta clicar em "Editar texto"
@@ -13,23 +12,23 @@
         compartilhar a sua história.
     </p>
 
-    <div curriculoDirective *ngFor="let projeto of projetos" >
+    <div curriculoDirective *ngFor="let projeto of projetos$ | async">
+        
         <div class="pai">
-             <div>
+
+            <div>
                 <h2>{{ projeto.nome }}</h2>
                 <h4>{{ projeto.funcao }} - {{ projeto.ano }}</h4>
-            </div>   
-        
-            
-            
+            </div>
+
             <div>
                 <p>{{ projeto.descricao }}</p>
             </div>
-            </div>
-       
-            
 
-            <img [src]="projeto.imagemUrl" alt="{{ projeto.nome }}">
+        </div>
+
+        <img [src]="'assets/' + projeto.imagemUrl" alt="{{ projeto.nome }}">
+
     </div>
+
 </section>
-<app-footer></app-footer>
