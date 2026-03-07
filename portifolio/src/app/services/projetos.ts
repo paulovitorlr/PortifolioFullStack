@@ -21,8 +21,10 @@ export class ProjetosService {
 
   constructor(private http: HttpClient) {}
 
-  listar(): Observable<Projeto[]> {
-    return this.http.get<Projeto[]>(this.API_URL);
+  listar(page: number, pageSize: number): Observable<Projeto[]> {
+    return this.http.get<Projeto[]>(
+      `${this.API_URL}?page=${page}&pageSize=${pageSize}`
+    );
   }
 
   criar(projeto: Projeto): Observable<Projeto> {

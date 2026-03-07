@@ -7,30 +7,68 @@ section{
     background-color: $Fundo-Primaria;
     padding: 50px;
 
-    div.pai{
+    h1{
+        margin-bottom: 20px;
+    }
+
+    div.ContainerAPI{
+
         display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFF;
+        height: 300px;
+        width: 700px;
+
+       
+        margin-bottom: 50px;
+
         
-        gap: 50px;
+        div.pai{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        
+            gap: 20px;
+            
         
             h2{
                 color: $Azul-Secundaria;
+                margin-left: 20px;
             }
 
             h4{
                color: #000000;
+               margin-left: 20px;
             }
             p{
                 text-align: justify;
                 hyphens: auto;
-                
+                text-indent: 20px;
                 line-height: 1.3;
                 font-size: 0.8rem;
                 color: #000000;
                 letter-spacing: 0.2px;
-        }
+                margin-right: 10px;
+                margin-left: 10px;
+            }
     
         
-}
+        }
+    }
+
+    div.btns{
+        display: flex;
+        gap: 500px;
+        button{
+            background-color: $Azul-Secundaria;
+            color: #fff;
+            border: 2px solid $Azul-Secundaria;
+         &:hover{
+            background-color: #FFF;
+            color: #000;
+        } 
+        }
+    }
+    
 }

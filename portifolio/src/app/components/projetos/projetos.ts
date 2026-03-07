@@ -15,11 +15,34 @@ import { Observable } from 'rxjs';
 })
 export class Projetos {
 
-  projetos$: Observable<Projeto[]>;
+  tittle = "Projetos";
+  projetos$!: Observable<Projeto[]>;
+
+  paginaAtual = 1;
+  pageSize = 3;
+
 
   constructor(private projetosService: ProjetosService) {
-    debugger
-    this.projetos$ = this.projetosService.listar();
+   
+    this.carregarProjetos();
   }
 
+  carregarProjetos(){
+    this.projetos$ = this.projetosService.listar(
+      this.paginaAtual,
+      this.pageSize
+    );
+  }
+
+  proximaPagina(){
+    this.paginaAtual++;
+    this.carregarProjetos();
+  }
+
+  paginaAnterior(){
+    if(this.paginaAtual > 1){
+      this.paginaAtual--;
+      this.carregarProjetos();
+    }
+  }
 }
