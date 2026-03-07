@@ -11,10 +11,18 @@ public static class ProjetoEndpoints
 {
     public static void MapProjetoEndpoints(this WebApplication app)
     {
-        app.MapGet("/projetos", async (AppDbContext db) =>
+        app.MapGet("/projetos", async 
+            (int? page,
+            int? pageSize,
+            AppDbContext db) =>
         {
+            int currentPage = page ?? 1;
+            int size = pageSize ?? 3;
+
             var projetos = await db.Projetos
                 .Where(p => p.Ativo)
+                .Skip((currentPage -1) * size)
+                .Take(size)
                 .Select(p => new ProjetoResponse(
                     p.Id,
                     p.Nome,
