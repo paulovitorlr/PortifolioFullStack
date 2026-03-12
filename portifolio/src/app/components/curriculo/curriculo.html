@@ -1,6 +1,6 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar class="off"></app-nav-bar>
 
-<section>
+<section class="Desktop">
 
     <h1>
         {{ titulo }}
@@ -31,17 +31,7 @@
 
         <div class="pDescricao">
              <p>
-                Atuação no desenvolvimento de API REST utilizando .NET 
-                e Entity Framework Core, aplicando arquitetura em 
-                camadas, separação por DTOs e princípios de 
-                responsabilidade única. Implementação de endpoints 
-                assíncronos para operações CRUD, filtros com LINQ e 
-                mapeamento entre entidades e objetos de resposta. 
-                Integração com front-end em Angular via HttpClient, 
-                estruturando comunicação HTTP, consumo de dados e 
-                tratamento de respostas no cliente. Utilização de Git 
-                para versionamento e organização do projeto seguindo 
-                boas práticas de código limpo e manutenibilidade.
+                Desenvolvimento de API REST com .NET e Entity Framework Core, utilizando arquitetura em camadas e DTOs. Implementação de CRUD assíncrono, filtros com LINQ e mapeamento de dados. Integração com Angular via HttpClient e versionamento com Git, seguindo boas práticas de código limpo.
             </p>
         </div>
     </div>
@@ -65,15 +55,7 @@
 
         <div class="pDescricao">
              <p>
-                Sou estudante de Análise e Desenvolvimento de Sistemas, 
-                com foco na construção de aplicações escaláveis e bem estruturadas, 
-                aplicando princípios de Programação Orientada a Objetos, modelagem e 
-                manipulação de dados em Banco de Dados, além de boas práticas de 
-                Engenharia de Software. Ao longo da graduação, desenvolvi sólida base 
-                em Algoritmos e Estrutura de Dados, criação de APIs e integração entre 
-                front-end e back-end, utilizando metodologias e padrões de 
-                desenvolvimento voltados para performance, organização e 
-                manutenibilidade de sistemas.
+                Estudante de Análise e Desenvolvimento de Sistemas com foco em aplicações escaláveis e organizadas. Experiência em POO, algoritmos, banco de dados, criação de APIs e integração front-end/back-end, aplicando boas práticas de engenharia de software.
             </p>
         </div>
     </div>
@@ -100,4 +82,88 @@
     </div>
 </section>
 
-<app-footer></app-footer>
+
+<app-navbarmobile></app-navbarmobile>
+<section class="Mobile">
+
+    <h1>
+        {{ titulo }}
+    </h1>
+
+    <div class="containerCV">
+       <p class="textosXP">
+            Experiência
+        </p>
+
+        <button class="btnAzul">
+            BAIXAR CV
+        </button>
+    </div >
+
+    <div class="curriculoTemplate">
+        <div class="pTitulo">
+            <p class="pData"> 
+                2025 - Atual
+            </p>
+            <p class="pCargo">
+                Desenvolvedor Fullstack
+            </p> 
+            <p class="pEmpresa">
+                
+            </p>
+        </div>
+
+        <div class="pDescricao">
+             <p>
+                Desenvolvimento de API REST com .NET e Entity Framework Core, utilizando arquitetura em camadas e DTOs. Implementação de CRUD assíncrono, filtros com LINQ e mapeamento de dados. Integração com Angular via HttpClient e versionamento com Git, seguindo boas práticas de código limpo.
+            </p>
+        </div>
+    </div>
+
+    <p class="textosXP">
+        Formação
+    </p>
+
+    <div class="curriculoTemplate">
+        <div class="pTitulo">
+            <p class="pData"> 
+                2024 - 2026
+            </p>
+            <p class="pCargo">
+                Análise e Desenvolvimento de Sistemas
+            </p> 
+            <p class="pEmpresa">
+                Uniasselvi
+            </p>
+        </div>
+
+        <div class="pDescricao">
+             <p>
+                Estudante de Análise e Desenvolvimento de Sistemas com foco em aplicações escaláveis e organizadas. Experiência em POO, algoritmos, banco de dados, criação de APIs e integração front-end/back-end, aplicando boas práticas de engenharia de software.
+            </p>
+        </div>
+    </div>
+
+    <p class="textosXP">        
+        Habilidades profissionais
+    </p>
+
+    <div class="habilidades ">
+        <div class="pTitulo2">
+            <h2>
+                Tecnologias
+            </h2>
+            <div class="Tecnologias">
+                <img src="../assets/html.png" alt="">
+                <img src="../assets/css-3.png" alt="">
+                <img src="../assets/js.png" alt="">
+                <img src="../assets/typescript.png" alt="">
+                <img src="../assets/angular.png" alt="">
+                <img src="../assets/vs.png" alt="">
+                <img src="../assets/c-sharp.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer class="off"></app-footer>

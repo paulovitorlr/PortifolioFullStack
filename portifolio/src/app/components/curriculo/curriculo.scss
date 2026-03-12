@@ -91,3 +91,137 @@ section{
         font-size: 25px;
     }
 }
+
+@media(min-width: 830px){
+    
+}
+
+@media(max-width: 830px){
+.off{
+        display: none;
+    }
+    .Desktop{
+        display: none;
+    }
+
+    section.Mobile{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: #E6DACE;
+    
+
+    div.containerCV{
+        display: flex;
+      
+        gap: 20px;
+        
+       
+        
+
+        button.btnAzul{
+            background-color: $Azul-Secundaria;
+            color: #fff;
+            border: 2px solid $Azul-Secundaria;
+            padding: 6px 25px;
+            border-radius: 45px;
+         &:hover{
+            background-color: #FFF;
+            color: #000;
+        } 
+    }
+    }
+
+    div.curriculoTemplate{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        width: 350px;
+        height: 400px;
+        
+        background-color: #FFF;
+        div.pTitulo{
+            display: flex;
+           flex-direction: column;
+
+           margin-top: 10px;
+            p.pData{
+                Color: $Azul-Secundaria;
+                font-weight: 600;   
+            }
+
+            p.pCargo{
+                font-size: 12px;
+            }
+            p.pEmpresa{
+                font-size: 12px;
+            }
+        }
+
+        div.pDescricao{
+           
+            text-align: justify;
+            hyphens: auto;
+            text-indent: 20px;
+            line-height: 1.3;
+            font-size: 1.2rem;
+            color: #000000;
+            
+            letter-spacing: 0.2px;
+        }
+
+        
+    }
+
+    div.habilidades{
+        width: 350px;
+        height: 400px;
+        
+        background-color: #FFF;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        div.pTitulo2{
+            display: flex;
+            flex-direction: column;
+            
+           
+           
+            
+            h2{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            
+            div.Tecnologias{
+                
+                margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            
+            img{
+                width: 30px;
+            }
+        }
+        }
+        
+        
+        
+    }
+    
+    p.textosXP{
+        font-weight: 700;
+        font-size: 25px;
+    }
+}
+}
