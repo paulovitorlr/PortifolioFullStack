@@ -1,7 +1,7 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar class="Desktop"></app-nav-bar>
 
 
-<section>
+<section class="Desktop">
     <app-apresentacao></app-apresentacao>
     <div oladirective>
         <h1>Olá</h1>
@@ -42,4 +42,52 @@
 
 </section>
 
-<app-footer></app-footer>
+
+<app-navbarmobile class="off"></app-navbarmobile>
+<section class="Mobile">
+    <div class="apresentacao">
+
+        <img src="assets/perfil.jpg" alt="">
+
+        <p class="nomeMobile"> Paulo<br>Vitor</p>
+
+        <div class="BtnsDiv">
+            <button class="btnAzul Btn">CURRÍCULO</button> 
+            <button class="btnBranco Btn">PROJETOS</button>
+        </div>
+    </div>
+    
+    <div class="apresentacao2">
+        <h1>Olá</h1>
+        
+
+       <p class="p1">Meu perfil e meus projetos</p> 
+
+        
+       
+         
+        <div class="paragrafos">
+            <p class="ApresentacaoParagrafo"> 
+            Sou um desenvolvedor Fullstack em formação,
+            apaixonado por tecnologia e por criar soluções eficientes.
+            
+            
+    
+        </p>
+
+        <p class="ApresentacaoParagrafo">
+            Atualmente curso ADS na Uniasselvi e utilizo no dia a dia 
+            Angular, TypeScript, HTML, C# e .NET.
+        </p>
+
+        <p class="ApresentacaoParagrafo">
+            Busco evoluir constantemente, aplicando boas práticas de 
+            desenvolvimento, organização de código e foco em performance
+            para entregar aplicações modernas e bem estruturadas.
+        </p>
+        </div>
+        
+    </div>
+</section>
+
+<app-footer class="Desktop"></app-footer>

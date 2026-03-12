@@ -1,7 +1,7 @@
 @use '../../../variaveis' as *;
-section{
+section.Desktop{
    
-   padding: 100px;
+    padding: 100px;
     background: linear-gradient(to left, #ffffff 55%, #E6DACE 40%);
     display: flex;
     justify-content: center;
@@ -66,4 +66,132 @@ section{
         }
     }
     
+}
+@media(min-width: 830px){
+    .Mobile{
+        display: none;
+    }
+    .off{
+        display: none;
+    }
+}
+@media(max-width: 830px){
+    .Desktop{
+        display: none !important;
+    }
+    .off{
+        
+    }
+
+    .Mobile{
+        
+        background: linear-gradient(to bottom, #ffffff 30%, #E6DACE 30%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    div.apresentacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 25px;
+
+        background-color: #F4ECE6;
+        padding: 50px;
+
+        p.nomeMobile{
+            font-weight: 700;
+            font-size: 24px;
+
+            border-bottom: 2px solid $Azul-Secundaria;
+            padding-bottom: 8px;
+        }
+        img{
+            border-radius: 100%;
+            width: 200px;
+        }
+
+         div.BtnsDiv{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+    button.Btn{
+        padding: 6px 25px;
+        border-radius: 45px;
+        
+        
+    }
+    button.btnAzul{
+        background-color: $Azul-Secundaria;
+        color: #fff;
+        border: 2px solid $Azul-Secundaria;
+         &:hover{
+            background-color: #FFF;
+            color: #000;
+        } 
+    }
+    button.btnBranco{
+        background-color: #FFF;
+        color: #000000;
+        border: 2px solid #000000;
+            &:hover{
+                background-color: $Azul-Secundaria;
+                color: #ffffff;
+                border: 2px solid $Azul-Secundaria;
+            }
+        }
+    }
+    } 
+     
+    div.apresentacao2 {
+
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+        h1{
+            font-size: 50px;
+            font-weight: 900;
+            font-family: "Didact Gothic";
+
+            margin-right: 150px;
+        }
+        p.p1{
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        div.paragrafos{
+            display: flex;
+            flex-direction: column;  
+           
+            width: 350px;
+            padding: 50px, 0px, 50px, 50px;
+            p.ApresentacaoParagrafo{
+                
+                text-align: justify;
+                hyphens: auto;
+                text-indent: 20px;
+                line-height: 1.3;
+                font-size: 1.3rem;
+                color: #000000;
+            
+                letter-spacing: 0.2px;
+            }
+        }
+        
+        
+    } 
+    
+
+   
+    
+    
+    }
 }
