@@ -1,6 +1,7 @@
 import { NavBar } from '../nav-bar/nav-bar';
 import { Footer } from '../footer/footer';
-import { CurriculoDirective } from '../../directives/curriculo.directive';
+import { Navbarmobile } from '../navbarmobile/navbarmobile';
+
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjetosService, Projeto } from '../../services/projetos';
@@ -9,7 +10,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-projetos',
   standalone: true,
-  imports: [CommonModule, NavBar, Footer, CurriculoDirective],
+  imports: [CommonModule, NavBar, Footer, Navbarmobile],
   templateUrl: './projetos.html',
   styleUrls: ['./projetos.scss']
 })

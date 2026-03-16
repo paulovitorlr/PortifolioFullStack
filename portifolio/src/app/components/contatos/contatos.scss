@@ -89,7 +89,12 @@ section{
     }
 }
 
+@media(min-width: 830px){
+    .Mobile{
 
+        display: none;
+    }
+}
 @media(max-width: 830px){
     .Desktop{
         display: none;

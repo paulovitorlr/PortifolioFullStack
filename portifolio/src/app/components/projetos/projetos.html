@@ -1,6 +1,46 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar class="off"></app-nav-bar>
 
-<section >
+<section class="Desktop" >
+
+    <h1> {{tittle}} </h1>
+
+
+    <div class="ContainerAPI" *ngFor="let projeto of projetos$ | async">
+        
+        <div class="pai">
+
+            <div>
+                <h2>{{ projeto.nome }}</h2>
+                <h4>{{ projeto.funcao }} - {{ projeto.ano }}</h4>
+            </div>
+
+            <div>
+                <p>{{ projeto.descricao }}</p>
+            </div>
+
+        </div>
+
+        <img [src]="'assets/' + projeto.imagemUrl" alt="{{ projeto.nome }}">
+
+    </div>
+
+    <div class="btns">
+        <div>
+            <button (click)="paginaAnterior()">Anterior</button>  
+        </div>
+        
+        <div>
+            <button (click)="proximaPagina()">Próxima</button>
+        </div>
+        
+    </div>
+    
+
+</section>
+
+
+<app-navbarmobile class="Mobile"></app-navbarmobile>
+<section class="Mobile" >
 
     <h1> {{tittle}} </h1>
 
