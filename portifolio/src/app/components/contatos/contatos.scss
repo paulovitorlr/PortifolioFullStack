@@ -53,9 +53,6 @@ section{
             div{
                 display: flex;
                 gap: 150px;
-                p{
-                    
-                }
             }
             
         }
@@ -90,4 +87,73 @@ section{
             color: #000;
         } 
     }
+}
+
+
+@media(max-width: 830px){
+    .Desktop{
+        display: none;
+    }
+    .off{
+        display: none;
+    }
+
+    section.Mobile{
+        background-color: $Fundo-Primaria;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    div.FormularioContainer{
+
+        width: 300px;
+        height: 500px;
+        background-color: #FFF;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            font-weight: 600;
+            font-size: 12px;
+            span{
+                color: $Azul-Secundaria;
+            }
+        }
+
+        input{
+            
+            border: none;
+            border-bottom: 1px solid $Azul-Secundaria !important;
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+        }  
+
+        .FormsObjetos{
+            display: flex;
+            flex-direction: column;
+
+            gap: 25px;
+        }
+    }
+
+    button.btnAzul{
+        padding: 6px 25px;
+        border-radius: 45px;
+        background-color: $Azul-Secundaria;
+        color: #fff;
+        border: 2px solid $Azul-Secundaria;
+            
+        &:hover{
+            background-color: #FFF;
+            color: #000;
+        } 
+    }
+}
 }
