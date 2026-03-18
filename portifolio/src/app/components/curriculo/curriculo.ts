@@ -20,5 +20,13 @@ import { CurriculoCDirective } from '../../directives/curriculoColumn.directive'
 })
 export class Curriculo {
  titulo = "🟦 Currículo";
+  
+ baixarPDF() {
+  debugger
+  console.log('clicou');
+
+ 
+}
+
 
 }

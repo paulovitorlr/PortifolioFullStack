@@ -11,3 +11,22 @@ section{
         gap: 10px;
     }
 }
+
+@media(max-width: 830px){
+        section{
+            background-color: #FFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px;
+   
+
+    div.Contatos{
+        display: flex;
+        flex-direction: column;
+       
+        gap: 10px;
+    }
+}
+}
