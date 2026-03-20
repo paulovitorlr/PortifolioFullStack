@@ -22,8 +22,11 @@ export class Curriculo {
  titulo = "🟦 Currículo";
   
  baixarPDF() {
-  debugger
-  console.log('clicou');
+  
+  const link = document.createElement('a');
+  link.href = 'assets/curriculo.pdf';
+  link.download = 'curriculo.pdf';
+  link.click();
 
  
 }

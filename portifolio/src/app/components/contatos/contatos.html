@@ -1,5 +1,7 @@
 <app-nav-bar class="off"></app-nav-bar>
 
+<form (ngSubmit)="enviarEmail()">
+
 <section class="Desktop">
     <div class="FormularioContainer">
 
@@ -9,34 +11,35 @@
                 <p>Sobrenome<span> *</span></p>
             </div>
             <div>
-                <input type="text">
-                <input type="text" name="" id="">
+                <input type="text" name="nome" [(ngModel)]="form.nome">
+                <input type="text" name="sobrenome" [(ngModel)]="form.sobrenome">
             </div>
-            
         </div>
 
         <div class="Assunto">
             <div class="div1">
                 <p>E-mail<span> *</span></p>
-                <input type="email" name="" id="">
+                <input type="email" name="email" [(ngModel)]="form.email">
             </div>
             
             <div class="div2">
-                <p>Assuntno<span> *</span></p>
-                <input type="text" name="" id="">
+                <p>Assunto<span> *</span></p>
+                <input type="text" name="assunto" [(ngModel)]="form.assunto">
             </div>
             
             <div class="div3">
-                <p>Menssagem<span> *</span></p>
-                <input type="text">
+                <p>Mensagem<span> *</span></p>
+                <input type="text" name="mensagem" [(ngModel)]="form.mensagem">
             </div>
             
-            <button class="btnAzul">
+            <button class="btnAzul" type="submit">
                 Enviar
             </button>
         </div>         
     </div>
 </section>
+
+</form>
 
 
 
@@ -77,7 +80,7 @@
                     <input type="text">
                 </div>
 
-                <button class="btnAzul">
+                <button class="btnAzul" type="submit">
                     Enviar
                 </button>
             </div> 
