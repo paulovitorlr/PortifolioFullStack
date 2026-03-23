@@ -16,3 +16,12 @@
         <span></span>
     </div>
 </section>
+
+<nav class="menu-full" [class.open]="menuAberto">
+  <ul>
+    <li><button class="btnsNav" routerLink="/home" (click)="toggleMenu()">Sobre</button></li>
+    <li><button class="btnsNav" routerLink="/projetos" (click)="toggleMenu()">Projetos</button></li>
+    <li><button class="btnsNav" routerLink="/curriculo" (click)="toggleMenu()">Curriculo</button></li>
+    <li><button class="btnsNav" routerLink="/contato" (click)="toggleMenu()">Contato</button></li>
+  </ul>
+</nav>
